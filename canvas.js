@@ -1,4 +1,5 @@
-window.onload = function() {
+function main(tshirtwidth, tshirtheight){//window.onload = function() {
+	alert("ghfkj");
 	var imageScaleFactor = 0.80;
     var outputStride = 8;
     var flipHorizontal = false;
@@ -9,8 +10,9 @@ window.onload = function() {
 	var xShirtMid;
 	var yShirtMid;
 	var scale;
-	var tshirtwidth = 609;                         // small - 431,685   // medium - 508, 762 // large - 609.6, 800
-	var tshirtheight = 762 ;
+	var tshirtwidth = 431;                         // small - 431,685   // medium - 508, 762 // large - 609.6, 800
+	var tshirtheight = 685 ;
+	alert("hello");
 
     posenet.load().then(function(net){
       return net.estimateSinglePose(imageElementBack, imageScaleFactor, flipHorizontal, outputStride)
@@ -95,4 +97,4 @@ window.onload = function() {
 	
     
     
-}
+}///}
